@@ -9,7 +9,7 @@ use embassy_time::{Duration, Ticker};
 use embassy_sync::{blocking_mutex::raw::CriticalSectionRawMutex, signal::Signal};
 use esp_backtrace as _;
 use esp_hal::{
-    clock::ClockControl, cpu_control::{CpuControl, Stack}, get_core, gpio::{GpioPin, Io, Level, Output}, peripherals::Peripherals, prelude::*, system::SystemControl, timer::timg::{Timer as HardwareTimer, TimerGroup}, xtensa_lx::interrupt::get
+    clock::ClockControl, cpu_control::{CpuControl, Stack}, get_core, gpio::{GpioPin, Io, Level, Output}, peripherals::Peripherals, system::SystemControl, timer::timg::TimerGroup
 };
 use esp_hal_embassy::Executor;
 use esp_println::println;
