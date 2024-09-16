@@ -29,7 +29,7 @@ async fn blink_2sec (
             println!("LED ON signal recieved on core {:?}. Turning LED ON...", get_core() as usize);
             led.set_high();
         } else {
-            println!("LED OFF signal recieved on core {:?}. Turning LED ON...", get_core() as usize);
+            println!("LED OFF signal recieved on core {:?}. Turning LED OFF...", get_core() as usize);
             led.set_low();
         }
     }
